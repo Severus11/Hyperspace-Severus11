@@ -2,6 +2,7 @@
     --dark-blue: #1d1f3e;
     --dark-blue-card: #262845;
     --neon-green: #69f0ae;
+    font-family: sans-serif;
     height: 100%;
 }
 .header{
@@ -29,31 +30,43 @@ h2{
 body{
     background-color: var(--dark-blue);
 }
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
+.tab {
+    overflow: -moz-hidden-unscrollable ;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+       
+  }
+  .tab-text{
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: right;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+    padding: 5px 20px;
+    transition: 0.3s;
   }
   
-  .tablink:hover {
-    background-color: #777;
+ 
+  .tab button:hover {
+    background-color: #ddd;
   }
   
-  /* Style the tab content (and add height:100% for full page content) */
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
   .tabcontent {
-    color: white;
     display: none;
-    padding: 100px 20px;
-    height: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    
   }
-  
-  #Home {background-color: red;}
-  #News {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
