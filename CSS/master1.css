@@ -1,0 +1,59 @@
+:root {
+    --dark-blue: #1d1f3e;
+    --dark-blue-card: #262845;
+    --neon-green: #69f0ae;
+    height: 100%;
+}
+.header{
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: left;
+    margin: 30px 0px 0px 20px;
+}
+h2{
+    color: var(--neon-green);
+    font-family: sans-serif;
+    margin-top:18%;
+    margin-left: 45%;
+    font-size: 52px;
+}
+#photo{
+    /*padding: 50px 50px 50px 50px;*/
+    border-color: white;
+    border-radius: 50%;
+    border-width: 8px;
+    border-style: solid;
+    margin: -240px 0px 90px 400px ;
+}
+body{
+    background-color: var(--dark-blue);
+}
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: red;}
+  #News {background-color: green;}
+  #Contact {background-color: blue;}
+  #About {background-color: orange;}
