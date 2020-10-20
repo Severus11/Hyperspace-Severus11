@@ -19,7 +19,8 @@ h2{
     border-width: 8px;
     border-style: solid;
     display: block;
-    margin: -240px 0px 90px 430px ;
+    margin: -340px 0px 90px 900px ;
+    position: absolute;
 }
 
 body{
@@ -36,7 +37,7 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -52,9 +53,28 @@ body{
 .homeP{
   position: absolute;
   text-decoration: none;
-  /*color: var(--neon-green);*/
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   margin-top:-2%;
   margin-left: 2%;
+}
+.p1{
+  font-size: 21px;
+  margin-top: -11%;
+  background-color: transparent;
+}
+.b1{
+  font-size: 21px;
+  margin-top: -2.5%;
+  background-color: transparent;
+  color: var(--neon-green);
+  border: 2px solid white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.b1:hover{
+  color: var(--neon-green);
+  border: 3px solid white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
