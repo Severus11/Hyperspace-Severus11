@@ -107,7 +107,22 @@ h3{
 }
 .p2{
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-family: sans-serif;
+  margin-left: 20%;
+  
+
+}
+.container {
+  position: relative;
   text-align: center;
+  color: black;
+  font-size: 30px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Times New Roman';
 }
