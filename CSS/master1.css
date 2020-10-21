@@ -20,7 +20,7 @@ h2{
     border-style: solid;
     display: block;
     margin: -340px 0px 90px 900px ;
-    position: absolute;
+    position: static;
 }
 
 body{
@@ -97,4 +97,17 @@ body{
 .fa-github {
   background: transparent;
   color: white;
+}
+h3{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 6%;
+  font-size: 40px;
+}
+.p2{
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
 }
