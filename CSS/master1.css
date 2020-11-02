@@ -28,6 +28,8 @@ body{
 }
 .topnav {
   overflow: auto;
+  position: sticky;
+  position: -webkit-sticky;
   /*background-color: #333*/;  
 }
 .topnav a {
