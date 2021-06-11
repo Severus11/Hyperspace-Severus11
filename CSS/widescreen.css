@@ -1,0 +1,42 @@
+:root {
+    --dark-blue: #1d1f3e;
+    --dark-blue-card: #262845;
+    --neon-green: #69f0ae;
+    font-family: sans-serif;
+    height: 100%;
+}
+.top-name{
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  font-family: sans-serif;
+  font-size: 1.375em;
+  text-decoration: none;
+}
+.my_name{
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 2.1em;
+
+}
+/*  @media only screen and (max-width: 500px){*/
+#photo{
+    /*padding: 50px 50px 50px 50px;*/
+    position: absolute;
+    left: 63%;
+    top: 28%;
+    border-color: white;
+    border-radius: 50%;
+    border-width: 8px;
+    border-style: solid;
+    /*display: block;
+    margin: -340px 0px 90px 900px ;
+    position: static;*/
+}
+
+body{
+    background-color: var(--dark-blue);
+}
