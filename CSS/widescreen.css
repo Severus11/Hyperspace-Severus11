@@ -9,8 +9,8 @@
   font-family: sans-serif;
   text-decoration: none;
 }
-.row{
-  padding: 8% 15%;
+.main-text{
+  padding: 12% 12%;
 }
 .my-name{
   color: white;
@@ -22,17 +22,11 @@
 
 }
 #photo{
-    /*padding: 50px 50px 50px 50px;*/
-    position: absolute;
-    left: 63%;
-    top: 28%;
-    border-color: white;
-    border-radius: 50%;
-    border-width: 8px;
-    border-style: solid;
-    /*display: block;
-    margin: -340px 0px 90px 900px ;
-    position: static;*/
+  border-color: white;
+  border-radius: 50%;
+  border-width: 8px;
+  border-style: solid;
+
 }
 
 body{
