@@ -9,10 +9,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
     </header>
     <section id= "homepage">
-      <div class = "container-fluid">
-        <nav class="navbar  navbar-expand-lg navbar-dark " >
+      <div class = "container-fluid" style="padding-bottom: 8rem;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="top: 5%;">
           <a class="navbar-brand top-name" href="#homepage">Parthsarthi <span style="color: var(--neon-green)">Gupta</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,7 +51,7 @@
        </div>
 
        <div class = "col-lg-4">
-       <img id= "photo" src ='images\me.jpg' width = 80%>
+       <!-- <img id= "photo" src ='images\me.jpg' width = 80%> -->
        </div>
 
      </div>
@@ -60,89 +61,117 @@
 
     <section class="ftco-section" id = "About">
       <div class = "container-fluid">
-        <!-- <h2 class = "my-name">About</h2> -->
-        <div class = "row main-text">
-          <div class = " col-lg-3">
+        <div class="row main-text" style="padding-top:6rem;" >
+          <div class = "col-lg-3" style="bottom: 3rem">
             <img style="margin-top: 53%" id= "photo" src ='images\me.jpg' width = 80%>
           </div>
+          <div class= "col-lg-9 para-text">
+            
+            <ul class="nav nav-pills" style="padding-left: 30%;">
+              <li class="nav-item pill-1">
+                <a class="nav-link active" data-toggle="tab" style="border-right: 1px solid white; padding: 8px; " href="#home">About Me</a>
+              </li>
+              <li class="nav-item pill-1">
+                <a class="nav-link" data-toggle="tab" style="border-right: 1px solid white; padding: 8px; " href="#menu1">Education</a>
+              </li>
+              <li class="nav-item pill-1">
+                <a class="nav-link" data-toggle="tab" style="padding: 8px; " href="#menu2">Experience</a>
+              </li>
+            </ul>
         
-          <div class = "col-lg-9 para-text">
-            <nav class="navbar navbar-expand-lg navbar-dark " style="left: 20%;" >
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class = "navbar-nav">
-                  <li class = "nav-item" style="border-right: 1px solid white; padding: 5px; " role="presentation"> 
-                    <a class="nav-link" id="aboutme-tab" data-bs-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="false">About Me</a>
-                  </li>
-                  <li class = "nav-item" style="border-right: 1px solid white; padding: 5px;" role="presentation"> 
-                    <a class="nav-link" id="aboutme-tab" data-bs-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="false">Education</a>
-                  </li>
-                  <li class = "nav-item" style="   padding: 5px;" role="presentation"> 
-                    <a class="nav-link" id="aboutme-tab" data-bs-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="false">Experience</a>
-                  </li>
-                </ul>
+            <div class="tab-content">
+            <div class="tab-pane container active" id="home"><br>
+              <br>
+              <h3>About me</h3>
+              <br>
+              <br>
+              <table style="width:100%" class = "para-text">
+                <tr>
+                  <td style="color: var(--neon-green)">Name</td>
+                  <td>Parthsarthi Gupta</td>
+                  <td style="color: var(--neon-green)">Date of Birth</td>
+                  <td >11 March 1999</td> 
+                </tr>
+                <tr>
+                  <td style="color: var(--neon-green)">Qualification</td>
+                  <td>B.Tech Electrical and Electronics</td>
+                  <td style="color: var(--neon-green)">College</td>
+                  <td>Vellore Institute of Technology</td>
+                </tr>
+                <tr>
+                  <td style="color: var(--neon-green)">Phone Number</td>
+                  <td>+91 964 364 7170</td>
+                  <td style="color: var(--neon-green)">Email Id</td>
+                  <td>parthsgupta@gmail.com</td>
+                </tr>
+                 <tr>
+                  <td style="color: var(--neon-green)">Current Role</td>
+                  <td>Asso. Software Engineer @ Bosch</td>
+                  <td style="color: var(--neon-green)">City</td>
+                  <td>Bengaluru, KA</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <hr style="border-color: white">
+              <br>
+              <br>
+              I am an Electronics and Electrical Engineering graduate, with deep interest in Computer Vision, Automation and robotics which are well demonstrated by my projects.<br><br>
+              I am an avid learner who is highly adaptable to new technologies. My practice area remains on devising Computer Visiom algorithms to automate everyday tasks via a touchless approach.</div>
+ 
+            <div class="tab-pane container fade" id="menu1"><br>
+              <br>
+              <h3>Education</h3>
+              <br>
+              <br>
+              <div class="resume-item">
+                <h4>Bachelor's of Technology</h4>
+                <h5>2017 - 2021</h5>
+                <p><em>Vellore Institute of Technology, Vellore, TN</em></p>
+                <p>Electrical and Electronics Engineering, 8.78 CGPA</p>
               </div>
-            </nav>
-
-            <!-- <ul class = "navbar-nav">
-              <li class = "nav-item" role="presentation"> 
-                <a class="nav-link" id="aboutme-tab" data-bs-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="false">About Me</a>
-              </li>
-              <li class = "nav-item" role="presentation"> 
-                <a class="nav-link" id="aboutme-tab" data-bs-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="false">Education</a>
-              </li>
-              <li class = "nav-item" role="presentation"> 
-                <a class="nav-link" id="aboutme-tab" data-bs-toggle="tab" href="#aboutme" role="tab" aria-controls="aboutme" aria-selected="false">Experience</a>
-              </li>
-
-            </ul> -->
-
-            <table style="width:100%" class = "para-text">
-              <tr>
-                <td style="color: var(--neon-green)">Name</td>
-                <td>Parthsarthi Gupta</td>
-                <td style="color: var(--neon-green)">Date of Birth</td>
-                <td >11 March 1999</td> 
-              </tr>
-              <tr>
-                <td style="color: var(--neon-green)">Qualification</td>
-                <td>B.Tech Electrical and Electronics</td>
-                <td style="color: var(--neon-green)">College</td>
-                <td>Vellore Institute of Technology</td>
-              </tr>
-              <tr>
-                <td style="color: var(--neon-green)">Phone Number</td>
-                <td>+91 964 364 7170</td>
-                <td style="color: var(--neon-green)">Email Id</td>
-                <td>parthsgupta@gmail.com</td>
-              </tr>
-               <tr>
-                <td style="color: var(--neon-green)">Current Role</td>
-                <td>Asso. Software Engineer @ Bosch</td>
-                <td style="color: var(--neon-green)">City</td>
-                <td>Bengaluru, KA</td>
-              </tr>
-            </table>
-            <hr style="border-color: white">
-
-            I am an Electronics and Electrical Engineering graduate, with deep interest in Computer Vision, Automation and robotics which are well demonstrated by my projects.<br><br>
-            I am an avid learner who is highly adaptable to new technologies. My practice area remains on devising Computer Visiom algorithms to automate everyday tasks via a touchless approach.
+              <div class="resume-item">
+                <h4>Higher Secondary Schooling</h4>
+                <h5>2016 - 2017</h5>
+                <p><em>Presidium- Indirapuram, Ghaziabad, UP</em></p>
+                <p>PCM, 92.8%</p>
+              </div></div>
+            <div class="tab-pane container fade" id="menu2"><br>
+              <br>
+              <h3>Experience</h3>
+              <br>
+              <br>
+              <div class="resume-item">
+                <h4>Software Engineering Intern</h4>
+                <h5>March 2021 - June 2021</h5>
+                <p><em>Robert Bosch Engineering and Buisness Services</em></p>
+                <p>
+                  <li>Worked as a part of a team responsible for body electronics.</li>
+                  <li>Coded, built and debugged sw and security config files for Infineon Aurix</li>
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Computer Vision & Embedded Engineer</h4>
+                <h5>January 2019 - February 2021</h5>
+                <p><em>Smoke Trees Digital LLP</em></p>
+                <p>
+                  <li>Worked as a part of a team undertaking robotics and CV projects.</li>
+                  <li>Coded, built and debugged sw config and security config files for Infineon Aurix</li> 
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Electrical Traction Engineering Intern </h4>
+                <h5>January 2019 - May 2019</h5>
+                <p><em>Siemens Ltd.</em></p>
+                <p>
+                  <li>We developed, designed and studied different traction equipment setups.</li>
+                  <li>Reported and optimised day to day bugs in electric system design.</li>
+                </p>
+              </div></div>
           </div>
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-            <h5>2015 - 2016</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-          </div>
-          <div class="resume-item">
-            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-            <h5>2010 - 2014</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-          </div>
-        </div>        
-      </div>
-
+        </div>
+      </div> 
+  
     </section>
     
     <section id = "Skills">
