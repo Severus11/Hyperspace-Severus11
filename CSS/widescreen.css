@@ -43,7 +43,8 @@
 }
 
 body{
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-color: black;
 }
 
 .navbar{ 
@@ -213,3 +214,78 @@ td {
 }
 
 /* skills page */
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: var(--neon-green)
+}
+.interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.interests .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.feature-title {
+  font-size: 1.1rem;
+}
+.feature-box {
+  padding: 4.5%;
+  text-align: center;
+}
+.icon {
+  color: var(--neon-green);
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color:white;
+}
+i1{
+  scale: 10%;
+}
