@@ -1,76 +1,96 @@
-<html lang = "en" style="scroll-behavior: smooth">
-    <header>
-        <title> Parthsarthi gupta</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel = "stylesheet" href="CSS\widescreen.css">
-        <meta name = "viewport" content = "width= device-width, initial-scale =1.0, shrink-to-fit=yes">
-        <link rel = "icon" href = "C:\Users\parth\Downloads\myicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-        <link href="assets/icofont/icofont.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/97490cfcf4.js" crossorigin="anonymous"></script>
-        
-    </header>
-    <section id= "homepage" style="background-color: var(--dark-blue);">
-      <div class = "container-fluid" style="padding-bottom: 12rem;">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="top: 5%;">
-          <a class="navbar-brand top-name" href="#homepage">Parthsarthi <span style="color: var(--neon-green)">Gupta</span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<!DOCTYPE html>
+<html lang="en">
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-           <ul class="navbar-nav ml-auto">
-             <li class="nav-item">
-               <a class="nav-link" href="#About">About</a>    
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#Skills">Skills</a>
-             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="">Projects</a>
-             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="">Achievments</a>
-             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
-             </li>
-           </ul>
-         </div>
-       </nav>
+  <title>MyResume Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-     <div class = "row main-text">   
-       <div class = " col-lg-8">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-         <h1 class = "mb-4 my-name">Hi ! <br>I'm Parthsarthi Gupta, <br> a <span style="color: var(--neon-green)">Robotics Software Engineer.</span></h2>
-         <p class = "my-name" style="font-size:1.25em">talks to multi-scalable <span style="color: var(--neon-green)">robots & devices </span>in <span style="color:var(--neon-green)">python</span>.</p><br>
-         <a href="mailto:parthsgupta@gmail.com"><button type = "button" class = "btn btn-outline-light btn-lg">Let's get in touch !</button></a>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-       </div>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/97490cfcf4.js" crossorigin="anonymous"></script>
 
-       <div class = "col-lg-4">
-       <!-- <img id= "photo" src ='images\me.jpg' width = 80%> -->
-       </div>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/widescreen.css" rel="stylesheet">
 
-     </div>
+
+  <!-- =======================================================
+  * Template Name: MyResume - v2.2.1
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#skills"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <!-- <li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Parthsarthi Gupta</h1>
+      <p>I'm a <span class="typed" data-typed-items="Software Engineer. , AI Developer. , Robotics Enthusiast. , Footballer. Photographer."></span></p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
+  </section><!-- End Hero -->
 
-    </section>
+  <main id="main">
 
-    <section class="ftco-section" id = "About">
-      <div class = "container-fluid">
-        <div class="row main-text" style="padding-top:6rem;" >
-          <div class = "col-lg-3" style="bottom: 3rem">
-            <img style="margin-top: 53%" id= "photo" src ='images\me.jpg' width = 80%>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div class="row main-text" style="padding-top:1rem;">
+          <div class="col-lg-3" style="bottom: 3rem">
+            <img style="margin-top: 53%" id="photo" src="images\me.jpg" width="80%">
           </div>
-          <div class= "col-lg-9 para-text">
+          <div class="col-lg-9 para-text">
             
-            <ul class="nav nav-pills" style="padding-left: 30%;">
+            <ul class="nav nav-pills" style="padding-left: 1.5%;">
               <li class="nav-item pill-1">
                 <a class="nav-link active" data-toggle="tab" style="padding: 8px; " href="#home">About Me</a>
               </li>
@@ -83,15 +103,15 @@
             </ul>
         
             <div class="tab-content">
-            <div class="tab-pane container active" id="home"><br>
+            <div class="tab-pane container active" id="home" style="padding-top:3%"><br>
               <h3>About me</h3>
               <br>
-              <table style="width:100%" class = "para-text">
-                <tr>
+              <table style="width:100%" class="para-text">
+                <tbody><tr>
                   <td style="color: var(--neon-green)">Name</td>
                   <td>Parthsarthi Gupta</td>
                   <td style="color: var(--neon-green)">Date of Birth</td>
-                  <td >11 March 1999</td> 
+                  <td>11 March 1999</td> 
                 </tr>
                 <tr>
                   <td style="color: var(--neon-green)">Qualification</td>
@@ -111,7 +131,7 @@
                   <td style="color: var(--neon-green)">City</td>
                   <td>Bengaluru, KA</td>
                 </tr>
-              </table>
+              </tbody></table>
               
               <hr style="border-color: white">
             
@@ -154,35 +174,6 @@
                   </div>
                 </div>
               </div>
-              <div class="interests">    
-                <div class="row">
-                  <div class="col-lg-3 col-md-4">
-                    <div class="icon-box">
-                      <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                      <h3>Computer Vision</h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                      <i class="ri-database-2-line"></i>
-                      <h3>Robotics</h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box">
-                      <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                      <h3>Public Speaking</h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                    <div class="icon-box">
-                      <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                      <h3>Football</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
  
             <div class="tab-pane container fade" id="menu1"><br>
@@ -212,49 +203,55 @@
                 <h5>March 2021 - Present</h5>
                 <p><em>Robert Bosch Engineering and Buisness Services</em></p>
                 <p>
-                  <li>Worked as a part of a team responsible for body electronics.</li>
+                  </p><li>Worked as a part of a team responsible for body electronics.</li>
                   <li>Coded, built and debugged sw and security config files for Infineon Aurix</li>
-                </p>
+                <p></p>
               </div>
               <div class="resume-item">
-                <h4>Computer Vision & Embedded Engineer</h4>
+                <h4>Computer Vision &amp; Embedded Engineer</h4>
                 <h5>January 2019 - February 2021</h5>
                 <p><em>Smoke Trees Digital LLP</em></p>
                 <p>
-                  <li>Worked as a part of a team undertaking robotics and CV projects.</li>
+                  </p><li>Worked as a part of a team undertaking robotics and CV projects.</li>
                   <li>Coded, built and debugged sw config and security config files for Infineon Aurix</li> 
-                </p>
+                <p></p>
               </div>
               <div class="resume-item">
                 <h4>Electrical Traction Engineering Intern </h4>
                 <h5>January 2019 - May 2019</h5>
                 <p><em>Siemens Ltd.</em></p>
                 <p>
-                  <li>We developed, designed and studied different traction equipment setups.</li>
+                  </p><li>We developed, designed and studied different traction equipment setups.</li>
                   <li>Reported and optimised day to day bugs in electric system design.</li>
-                </p>
+                <p></p>
               </div></div>
           </div>
         </div>
-      </div> 
-    </section>
-    
-    <section class = "ftco-section" id = "Skills" style="background-color: var(--dark-blue);">
+      </div>
+
+        
+
+      </div>
+    </section><!-- End About Section -->
+
   
-      <div class="container-fluid skills" style="padding-top: 8%;">
-        <br>
-        <h3 style="color: white">Skills</h3>
-        
-        <!-- <h5 style="color: white">I write efficient code in </h5> -->
-        <br>
-        
-        <div class="row">   
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg" style="background-color:black">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row skills-content">
           <div class="col-lg-6">
   
             <div class="progress">
               <span class="skill">C/C++<i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
   
@@ -286,19 +283,19 @@
             <div class="progress">
               <span class="skill">Arduino <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
   
             <div class="progress">
               <span class="skill">Matlab <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
   
           </div>
-  
+          
         </div>
         <br>
         <br>
@@ -402,23 +399,280 @@
               </div>
             </div>
           </div>
-    
-        </div><!-- End Interests -->
 
-        
       </div>
-    </section>
+    </section><!-- End Skills Section -->
 
-    <section id = "Projects">
-      
-    </section>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
 
-    <section id = "Contact">
-      
-    </section>
+        <div class="section-title">
+          <h2>Projects</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
 
-    <!-- <div>
-    <a style="margin-top: 6%" href="https://github.com/Severus11" class="fab fa-github" target="_blank"></a>
-    </div> -->
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-AiPow">AI Powered</li>
+              <li data-filter=".filter-apps">Apps</li>
+              <li data-filter=".filter-Robots">Robots</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-AiPow">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ezgif.com-gif-maker (3).gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Virtual Air Painting</h4>
+                <p>Draw, paint, scribble on your screen !</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/ezgif.com-gif-maker (3).gif" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/Virtual-Air-Painting" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Robots">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/raven1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Raven</h4>
+                <p>Behold the queen of middleweight category robot fighting !</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/raven1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=_2ArlKlPMQQ&t=1s" data-gall="portfolioDetailsGallery" title="View Videos"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-AiPow">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/caption generator 0.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Intelli-Caption Generator</h4>
+                <p>Feed in your image to us, we serve you a caption for it :) </p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/Intelli-caption-generator" data-gall="portfolioDetailsGallery" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-AiPow">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/facemesh_3d_demo.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Facial Pose Net</h4>
+                <p>A model that maps the features of your face to 51 keypoints !</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/facemesh_3d_demo.gif" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/Facial-Pose-Net" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Robots">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/raven2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Vulcan</h4>
+                <p>The prince of featherweight robot fighting cometh !</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/raven2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=GxaU4_btH4E" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Videos"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-apps">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/crispy-indoornav.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Crispy-IndoorNav</h4>
+                <p>Stuck? Draw the map of the place and send it to us on Telegram ! We'll stear you out</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/crispy-indoornav.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/crispy-IndoorNav" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-AiPow">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/marsRover.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mars Rover</h4>
+                <p>This python app simulates an autonomous rover surveying on Mars.</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/marsRover.gif" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/MarsRover" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-apps">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/footbaal-tracker.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>European Football Tracker</h4>
+                <p>Now track your favorite European Teams across all the 5 leagues ! </p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/footbaal-tracker.JPG" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/European-football-Tracker" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-apps">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Biblio 1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Biblio</h4>
+                <p>This webapp converts your boring book to an audible ! </p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/Biblio 1.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/Severus11/Biblio-The-book-reader-for-all" data-gall="portfolioDetailsGallery" data-vbtype="iframe" title="View Code"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>B 801, Jal Vayu Heights, Jalahalli<br>
+                Bengaluru-560013</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>parthsgupta.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 964 364 7170</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Parthsarthi Gupta</h3>
+      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Parthsarthi Gupta 2021</span></strong>. All Rights Reserved
+      </div>
+      <!-- <div class="credits"> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      <!-- </div> -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 
 </html>
