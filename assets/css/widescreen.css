@@ -3,6 +3,7 @@
   --dark-blue-card: #262845;
   --neon-green: #69f0ae;
   --my-blue : #0563bb;
+  --my-black : #45505b;
   font-family: sans-serif;
   height: 100%;
   overflow-x:hidden;
@@ -47,7 +48,7 @@
   padding: 1%;
   font-size: 1.15em;
   font-family: sans-serif;
-  border-color: var(--neon-green);
+  border-color: var(--my-blue);
   margin: 5% 3% 5% 0;
 }
 .para-text{
@@ -70,12 +71,12 @@ td {
   color:black;
 }
 .nav-pills .pill-1 .nav-link {
-  background-color: rgb(0,0,255,0.6);
+  background-color: rgb(5,99,187);
   ;
 }
 .nav-pills .pill-1 .nav-link:hover{
-  /* background-color: white; */
-  /* color: black; */
+  background-color: rgb(5,99,187,0.2);
+  color: black;
 }
 #home{
   padding-bottom: 30%;
@@ -97,7 +98,7 @@ td {
 .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(5, 99, 187, 0.2);
   position: relative;
 }
 
@@ -107,7 +108,7 @@ td {
   /* font-weight: 600; */
   text-transform: uppercase;
   font-family: sans-serif;
-  color: var(--neon-green);
+  color: var(--my-blue);
   margin-bottom: 10px;
 }
 
@@ -140,8 +141,8 @@ td {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  /* background: #18d26e; */
-  /* border: 2px solid #18d26e; */
+  background: var(--my-blue);
+  border: 2px var(--my-blue);
 }
 .counts {
   padding: 70px 0 60px;
@@ -152,7 +153,7 @@ td {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(25, 200, 255, 0.08);
 }
 
 .counts .count-box i {
@@ -161,9 +162,9 @@ td {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 100, 230, 0.1);
   padding: 12px;
-  color: var(--neon-green);
+  color: var(--my-blue);
   border-radius: 50px;
 }
 
@@ -171,8 +172,10 @@ td {
   font-size: 36px;
   display: block;
   /* font-weight: 600; */
-  color: #fff;
+  color: black;
   font-family: sans-serif;
+  /* border-style: solid;
+  border-color: var(--my-blue); */
 }
 
 .counts .count-box p {
@@ -196,7 +199,7 @@ td {
   display: block;
   font-weight: 600;
   font-family: sans-serif;
-  color: #fff;
+  color: #45505b;
 }
 
 .skills .progress .skill .val {
@@ -205,14 +208,14 @@ td {
 }
 
 .skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(5, 99, 187, 0.15);
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: var(--neon-green)
+  background-color: var(--my-blue);
 }
 .interests .icon-box {
   display: flex;
@@ -234,7 +237,7 @@ td {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #fff;
+  color: var(--my-blue);
 }
 
 .interests .icon-box:hover {
@@ -248,10 +251,10 @@ td {
   text-align: center;
 }
 .icon {
-  color: var(--neon-green);
+  color: var(--my-blue);
   margin-bottom: 1rem;
 }
 
 .icon:hover {
-  color:white;
+  color: rgb(5,99,187, 0.5);
 }
