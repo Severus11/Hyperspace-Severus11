@@ -32,12 +32,14 @@
   <link href="assets/css/widescreen.css" rel="stylesheet">
   
   <!-- Email service -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
-  (function() {
-    emailjs.init("user_GJfVOr96nFdcQM9edzvgo"); 
-  })();
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('user_GJfVOr96nFdcQM9edzvgo');
+      })();
   </script>
+               
 
 </head>
 
@@ -597,57 +599,56 @@
             </div>
 
           </div>
-          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
           <script type="text/javascript">
-              (function() {
-                  // https://dashboard.emailjs.com/admin/integration
-                  emailjs.init('user_GJfVOr96nFdcQM9edzvgo');
-              })();
-          </script>
-          <script type="text/javascript">
-              window.onload = function() {
-                  document.getElementById('contact-form').addEventListener('submit', function(event) {
-                      event.preventDefault();
-                      // generate a five digit number for the contact_number variable
-                      this.contact_number.value = Math.random() * 100000 | 0;
-                      // these IDs from the previous steps
-                      emailjs.sendForm('contact_service', 'contact_form', this)
-                          .then(function() {
-                              console.log('SUCCESS!');
-                          }, function(error) {
-                              console.log('FAILED...', error);
-                          });
-                  });
-              }
-          </script>
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_vr1tz1q', 'contact_form', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+          </script>        
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form method="post" role="form" class="php-email-form">
+            <form id ="contact-form" class="php-email-form">
               <div class="form-row">
-                <div class="col-md-6 form-group">
+                <!-- <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                </div>
+                </div> -->
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="hidden" name="contact_number">
+                  <input type="text" name="user_name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="user_email" id="email" placeholder="Your Email" required>
+                </div>
+                <!-- <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                </div> -->
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              </div>
-              <!-- <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
+              <!-- <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              </div> -->
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
               <div class="text-center"><button type="submit" value="Send" onclick="myFun()">Send Message</button></div>
-              <p id= "mymsg"></p>
+              <br>
+              <p id= "demo"></p>
               <script>
                 function myFun() {
-                  document.getElementById("mymsg").innerHTML = "Your message has been sent. Thank you!";
+                  document.getElementById("demo").innerHTML = "Your message has been sent. Thank you!";
                 }
               </script>
             </form>
