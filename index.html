@@ -585,7 +585,7 @@
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>parthsgupta.com</p>
+                <p>parthsgupta@gmail.com</p>
               </div>
 
               <div class="phone">
@@ -597,19 +597,28 @@
             </div>
 
           </div>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
           <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    emailjs.sendForm('contact_service', 'contact_form', this)
-                        .then(function() {
-                            console.log('SUCCESS!');
-                        }, function(error) {
-                            console.log('FAILED...', error);
-                        });
-                });
-            }
+              (function() {
+                  // https://dashboard.emailjs.com/admin/integration
+                  emailjs.init('user_GJfVOr96nFdcQM9edzvgo');
+              })();
+          </script>
+          <script type="text/javascript">
+              window.onload = function() {
+                  document.getElementById('contact-form').addEventListener('submit', function(event) {
+                      event.preventDefault();
+                      // generate a five digit number for the contact_number variable
+                      this.contact_number.value = Math.random() * 100000 | 0;
+                      // these IDs from the previous steps
+                      emailjs.sendForm('contact_service', 'contact_form', this)
+                          .then(function() {
+                              console.log('SUCCESS!');
+                          }, function(error) {
+                              console.log('FAILED...', error);
+                          });
+                  });
+              }
           </script>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
