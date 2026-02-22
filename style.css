@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-color: #1c1c1c;
+  color: #d0d0d0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+}
+
+.terminal {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.prompt {
+  margin-bottom: 20px;
+}
+
+.user { color: #5f87ff; }
+.host { color: #ffd75f; }
+.path { color: #5fd7ff; }
+.command { color: #d0d0d0; }
+
+.nav span {
+  margin-right: 20px;
+  cursor: pointer;
+  color: #5f87ff;
+}
+
+.nav span:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-top: 30px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.section-title {
+  color: #ffd75f;
+  margin-bottom: 15px;
+}
