@@ -3,41 +3,129 @@ body {
   background-color: #1c1c1c;
   color: #d0d0d0;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 15px;
+  line-height: 1.7;
 }
 
-.terminal {
+.container {
   max-width: 900px;
   margin: 60px auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .prompt {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
+/* ---- Vim Inspired CLI Colors ---- */
+
+.section-prompt {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.cli-user {
+  color: #5f87ff;
+}
+
+.cli-host {
+  color: #ffd75f;
+}
+
+.cli-path {
+  color: #5f87ff;
+}
+
+/* .cli-command {
+  color: #ffaf5f;
+}
+
+.cli-arg {
+  color: #a8ff60;
+} */
 
 .user { color: #5f87ff; }
 .host { color: #ffd75f; }
 .path { color: #5fd7ff; }
-.command { color: #d0d0d0; }
 
-.nav span {
-  margin-right: 20px;
-  cursor: pointer;
+.nav {
+  margin-bottom: 60px;
+}
+
+.nav a {
+  margin-right: 25px;
+  text-decoration: none;
   color: #5f87ff;
 }
 
-.nav span:hover {
+.nav a:hover {
   text-decoration: underline;
 }
 
-.content {
-  margin-top: 30px;
-  line-height: 1.6;
-  white-space: pre-line;
+h1 {
+  margin-bottom: 5px;
 }
 
-.section-title {
+.subtitle {
   color: #ffd75f;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.project {
+  margin-bottom: 35px;
+}
+
+.project h3 {
+  margin-bottom: 5px;
+  color: #ffd75f;
+}
+
+.diagram {
+  background: #181818;
+  padding: 20px;
+  border-radius: 4px;
+}
+/* Left side vertical section indicator */
+
+.side-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.side-nav a {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #444;
+  display: block;
+  transition: background 0.15s ease;
+}
+
+.side-nav a.active {
+  background: #5f87ff;
+}
+
+/* Optional subtle vertical guide line */
+.side-nav::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -20px;
+  bottom: -20px;
+  width: 1px;
+  background: #333;
+  z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth;
 }

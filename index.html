@@ -3,29 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parthsarthi Gupta</title>
+  <title>Parthsarthi Gupta | Linux Engineer</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  <div class="terminal">
-    <div class="prompt">
-      <span class="user">parthsarthi</span>@<span class="host">device</span>:<span class="path">~</span>$ 
-      <span class="command">ls</span>
-    </div>
-
-    <div class="nav">
-      <span onclick="loadSection('about')">about</span>
-      <span onclick="loadSection('projects')">projects</span>
-      <span onclick="loadSection('systems')">systems</span>
-      <span onclick="loadSection('contact')">contact</span>
-      <span onclick="loadSection('resume')">resume</span>
-    </div>
-
-    <div class="content" id="content"></div>
+  <div class="side-nav">
+    <a href="#about" data-section="about"></a>
+    <a href="#expertise" data-section="expertise"></a>
+    <a href="#systems" data-section="systems"></a>
+    <a href="#experience" data-section="experience"></a>
+    <a href="#contact" data-section="contact"></a>
   </div>
+  <div class="container">
 
+    <!-- Top Prompt -->
+    <div class="prompt">
+      <span class="user">parthsarthi</span>@<span class="host">device</span>:<span class="path">~</span>$ ls
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#about">about</a>
+      <a href="#expertise">expertise</a>
+      <a href="#systems">systems</a>
+      <a href="#experience">experience</a>
+      <a href="#contact">contact</a>
+      <a href="resume.pdf" target="_blank">resume</a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <!-- <div class="section-prompt">
+        parthsarthi@device:~/about$ cat profile.txt
+      </div> -->
+
+      <div class="section-prompt">
+        <span class="cli-user">parthsarthi</span>@<span class="cli-host">device</span>:<span class="cli-path">~/about</span>$ 
+        <span class="cli-command">cat</span> 
+        <span class="cli-arg">profile.txt</span>
+      </div>
+
+      <h1>Parthsarthi Gupta</h1>
+      <p class="subtitle">
+        Systems Engineer — Device to Cloud Architecture
+      </p>
+
+      <p>
+        I design and build secure production systems that originate on
+        constrained Linux/Android devices and scale into distributed
+        cloud-native infrastructure.
+      </p>
+
+      <p>
+        My work spans operating system integration, hardware-backed
+        authentication, custom protocol design, and AWS-based data
+        platforms. I operate comfortably across embedded systems,
+        backend services, and distributed cloud pipelines.
+      </p>
+
+      <p>
+        I specialize in turning ambiguous infrastructure problems into
+        reliable, scalable systems other engineers can build on.
+      </p>
+    </section>
+
+
+    <!-- EXPERTISE -->
+    <section id="expertise">
+      <div class="section-prompt">
+        <span class="cli-user">parthsarthi</span>@<span class="cli-host">device</span>:<span class="cli-path">~/about</span>$ 
+        <span class="cli-command">cat</span> 
+        <span class="cli-arg">expertise.txt</span>
+      </div>
+
+<pre class="diagram">
+embedded/
+cloud/
+security/
+data/
+infra/
+</pre>
+
+      <div class="columns">
+
+        <div>
+          <h3>Embedded & Systems</h3>
+          <ul>
+            <li>Linux system services</li>
+            <li>Android (AOSP integration)</li>
+            <li>ROS2 lifecycle architectures</li>
+            <li>HTTP servers & file transfer</li>
+            <li>Device provisioning flows</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Security & Identity</h3>
+          <ul>
+            <li>Custom authentication servers</li>
+            <li>AWS STS & SigV4 signing</li>
+            <li>Secure device registration</li>
+            <li>Hardware-backed trust chains</li>
+            <li>OIDC & Cognito integration</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Cloud & Distributed Systems</h3>
+          <ul>
+            <li>AWS IoT Core</li>
+            <li>S3 ingestion pipelines</li>
+            <li>Lambda processing</li>
+            <li>OpenSearch analytics</li>
+            <li>Serverless architecture</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SYSTEM ARCHITECTURE -->
+    <section id="systems">
+
+      <div class="section-prompt">
+        <span class="cli-user">parthsarthi</span>@<span class="cli-host">device</span>:<span class="cli-path">~/about</span>$ 
+        <span class="cli-command">cat</span> 
+        <span class="cli-arg">architecture.txt</span>
+      </div>
+
+<pre class="diagram">
+[ Linux / Android Device ]
+        ↓
+[ Custom Auth Server ]
+        ↓
+[ AWS STS / IoT ]
+        ↓
+[ S3 Storage ]
+        ↓
+[ Lambda Processing ]
+        ↓
+[ OpenSearch Dashboards ]
+</pre>
+
+      <p>
+        Designed and implemented secure device-to-cloud pipelines
+        enabling authenticated uploads, event-driven processing,
+        and searchable analytics at scale.
+      </p>
+
+      <p>
+        Emphasis on security boundaries, reliability under constrained
+        environments, and maintainable service architecture.
+      </p>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-prompt">
+        <span class="cli-user">parthsarthi</span>@<span class="cli-host">device</span>:<span class="cli-path">~/about</span>$ 
+        <span class="cli-command">cat</span> 
+        <span class="cli-arg">systems.txt</span>
+      </div>
+
+      <ul class="experience">
+        <li>
+          Built a secure authentication gateway enabling Linux/Android
+          devices to obtain temporary AWS credentials via STS.
+        </li>
+
+        <li>
+          Designed end-to-end ingestion pipeline:
+          device telemetry → S3 → Lambda → OpenSearch.
+        </li>
+
+        <li>
+          Implemented ROS2 lifecycle-managed services integrating
+          cloud artifact retrieval into robotics workflows.
+        </li>
+
+        <li>
+          Engineered high-reliability file transfer services for
+          production devices operating under limited resources.
+        </li>
+
+        <li>
+          Delivered systems spanning kernel-adjacent environments
+          to distributed cloud infrastructure.
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-prompt">
+        <span class="cli-user">parthsarthi</span>@<span class="cli-host">device</span>:<span class="cli-path">~/about</span>$ 
+        <span class="cli-command">cat</span> 
+        <span class="cli-arg">contact.txt</span>
+      </div>
+
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: https://github.com/Severus11</p>
+      <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+    </section>
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
