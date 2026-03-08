@@ -129,3 +129,79 @@ ul {
 html {
   scroll-behavior: smooth;
 }
+
+/* ----- Expertise Grid Layout ----- */
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ----- Translucent Terminal Cards ----- */
+
+.expertise-card {
+  background: rgba(18, 24, 40, 0.65); /* dark blue-black */
+  border: 1px solid rgba(95, 135, 255, 0.15);
+  padding: 28px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px); /* optional modern touch */
+}
+
+.expertise-card h3 {
+  margin-bottom: 18px;
+  color: #87afff; /* subtle Vim-like blue */
+  font-weight: 600;
+}
+
+.expertise-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expertise-card li {
+  margin-bottom: 10px;
+  color: #c8d1e6;
+  font-size: 14px;
+}
+
+
+/*experience*/
+/* ----- Timeline Layout ----- */
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #2a2f3f;
+}
+
+/* Each milestone */
+.timeline-item {
+  position: relative;
+}
+
+/* Dot */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5f87ff;
+  border: 2px solid #1c1c1c;
+}
